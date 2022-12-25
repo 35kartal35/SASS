@@ -1,0 +1,22 @@
+$primary-color:yellow;
+$font-size: 50px;
+
+body{
+ background-color: $primary-color;
+ font-size: $font-size;
+}
+
+
+@mixin border-radius($radius){
+    barder-radius: $radius;
+    -webkit-border-radius:$radius
+}
+
+@for $i from 1 through 3{
+    .btn-#{$i}{
+        background-color: firebrick;
+        color: white;
+    }
+}
+
+$count: 1;
